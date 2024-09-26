@@ -1,6 +1,6 @@
-const words = ["castle","shapeshift","castaspell","fighting","teleport"];
-const words2 = ["lasereyes","superspeed","superpowers","alienshavepowers",
-"mindcontrol"];
+const words = ["candy","dessert","sunday","underscore","teleport"];
+const words2 = ["bedtime","disgusting","rectangle","sesame",
+"sneakers"];
 
 let selectedText;
 
