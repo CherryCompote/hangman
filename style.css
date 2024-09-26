@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+.scoreBoard {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: orangered;
+  font-weight: bold;
+}
+
+.hangmanImage img {
+  width: 500px;
+  height: 450px;
+}
+
+.wordDisplay {
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #00ff00;
+}
+
+body {
+  text-align: center;
+  background-image: url(https://images.ctfassets.net/usf1vwtuqyxm/71J6YPxNauhFABbjHpGluJ/631bd6980b0a430d5b476ef331abb2b5/release_1_hogwarts.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 50px;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.keyboard button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 200px;
+  background-color: darkcyan;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.keyboard button.correct {
+  color: lightgreen;
+  background-color: black;
+  pointer-events: none;
+}
+
+.keyboard button.incorrect{
+  background-color: darkred;
+  color: white;
+  pointer-events: none;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 200px;
+  background-color: darkcyan;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+#wordForm input[type="submit"] {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 200px;
+  background-color: darkcyan;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.input-section {
+  margin-top: 20px;
+}
+
+.input-section input[type="text"]{
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#refresh {
+   margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 200px;
+  background-color: darkcyan;
+  color: whitesmoke;
+  font-weight: bold;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hangman2</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Player 2, input your words.:
+    </div>  
+    <div class="input-section">
+      <form id="wordForm">
+        <label for="Word1">Word 1:</label>
+        <input type="text" id="word1" name="word1" placeholder="Word 1"><br><br>
+        <label for="Word2">Word 2:</label>
+        <input type="text" id="word2" name="word2" placeholder="Word 2"><br><br>
+        <label for="Word3">Word 3:</label>
+        <input type="text" id="word3" name="word3" placeholder="Word 3"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <script>
+    
+      const wordForm = 
+        document.getElementById('wordForm');
+      wordForm.addEventListener('submit', function(event){
+        event.preventDefault();
+        const words3 = [];
+
+        words3.push(document.getElementById('word1').value);
+        words3.push(document.getElementById('word2').value);
+        words3.push(document.getElementById('word3').value);
+
+        localStorage.setItem('words3', JSON.stringify(words3));
+
+        window.location.href = '2game.html';
+        // document.getElementById('word1').value;
+        // document.getElementById('word2').value;
+      });
+      
+    </script>
+</body>
+
+</html>
