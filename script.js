@@ -76,5 +76,4 @@ function checkGameStatus() {
 }
 function refreshPage() {
       location.reload();
-    }
 }
