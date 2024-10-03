@@ -74,3 +74,7 @@ function checkGameStatus() {
   }
   disableKeyboard();
 }
+function refreshPage() {
+      location.reload();
+    }
+}
